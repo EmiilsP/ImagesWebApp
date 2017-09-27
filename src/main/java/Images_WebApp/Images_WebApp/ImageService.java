@@ -9,8 +9,8 @@ public class ImageService {
     @Autowired
     public ImageRepository imageRepository;
 
-    public void saveImage(){
-        Image image = new Image("Here will be passed path for image", "Here will be passed name","Here will be passed tag");
+    public void createImage() {
+        Image image = new Image("Here will be passed path for image", "name", "tag");
         imageRepository.save(image);
     }
 }

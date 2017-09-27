@@ -1,11 +1,7 @@
 package Images_WebApp.Images_WebApp;
 
-import org.springframework.data.annotation.Id;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Image")
@@ -16,9 +12,11 @@ public class Image {
     @Column
     String name;
     @Column
-    String tag; //manytoone
+    String tag; //manytoone???
     @Column
     String objectLocation;
+
+    public Image(){}
 
     public Image(String objectLocation, String name) {
         this.objectLocation = objectLocation;

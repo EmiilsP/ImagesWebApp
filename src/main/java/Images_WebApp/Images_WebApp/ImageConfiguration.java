@@ -22,7 +22,7 @@ import java.util.Properties;
 @EnableJpaRepositories(basePackages = {
         "Images_WebApp.Images_WebApp"
 })
-public class Configurations {
+public class ImageConfiguration {
 
     @Bean(destroyMethod = "close")
     public DataSource dataSource(Environment env) {
