@@ -1,4 +1,4 @@
-package Images_WebApp.Images_WebApp;
+package Images_WebApp.Images_WebApp.Configuration;
 
 
 import com.zaxxer.hikari.HikariConfig;
@@ -22,7 +22,7 @@ import java.util.Properties;
 @EnableJpaRepositories(basePackages = {
         "Images_WebApp.Images_WebApp"
 })
-public class ImageConfiguration {
+public class BeanConfiguration {
 
     @Bean(destroyMethod = "close")
     public DataSource dataSource(Environment env) {

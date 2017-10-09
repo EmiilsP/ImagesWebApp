@@ -1,11 +1,11 @@
-package Images_WebApp.Images_WebApp;
+package Images_WebApp.Images_WebApp.ImageObject;
 
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "Image")
-public class Image {
+public class ImageEntity {
     @Id
     @GeneratedValue
     Long id;
@@ -16,15 +16,15 @@ public class Image {
     @Column
     String objectLocation;
 
-    public Image(){}
+    public ImageEntity(){}
 
-    public Image(String objectLocation, String name) {
+    public ImageEntity(String objectLocation, String name) {
         this.objectLocation = objectLocation;
         this.name = name;
         this.tag = null;
     }
 
-    public Image(String objectLocation, String name, String tag) {
+    public ImageEntity(String objectLocation, String name, String tag) {
         this.objectLocation = objectLocation;
         this.name = name;
         this.tag = tag;

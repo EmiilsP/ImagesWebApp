@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test connection to server side</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="connection.js"></script>
+</head>
+
+<body ng-app="myModule">
+<div ng-controller="myController">
+<br/>
+<table>
+    <thead>
+    <th>
+        IS WORKING
+    </th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="integer in array">
+        <td>{{ integer }}</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>
