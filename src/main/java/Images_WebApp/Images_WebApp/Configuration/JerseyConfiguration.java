@@ -7,6 +7,10 @@ import org.springframework.stereotype.Component;
 
 import javax.ws.rs.ApplicationPath;
 
+/**
+ * Cik es saprotu Jersey 2.x nevajag web.xml jo mana gadijuma si klase pilda so funkciju?
+ * Vai esmu registrejis visu nepieciesamo, lai veiktu primitivas darbibas starp front-end un back-end?
+ */
 @ApplicationPath("rest")
 @Component
 public class JerseyConfiguration extends ResourceConfig {
